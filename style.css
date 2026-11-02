@@ -24,7 +24,7 @@ nav a:hover {
 h1,
 h2,
 h3 {
-  color: #38bdf8;
+  color: #14b8a6;
   font-family: "Space Grotesk", sans-serif;
   font-weight: 700;
   line-height: 1.2;
@@ -47,4 +47,73 @@ img {
   height: auto;
   border-radius: 8%;
   width: 200px;
+}
+
+.tools ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+  list-style-type: none;
+}
+
+.learning ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+  list-style-type: none;
+}
+
+.exploring ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+  list-style-type: none;
+}
+a {
+  color: #f8fafc;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #14b8a6;
+}
+
+.projects ul {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  list-style-type: none;
+  padding: 0;
+}
+
+.projects li {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.projects a {
+  display: block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  color: #f8fafc;
+  text-decoration: none;
+}
+.projects a:hover {
+  background-color: #14b8a6;
+  color: #f8fafc;
+  border-radius: 5px;
+}
+.projects img {
+  width: 100%;
+  height: 300px;
+  object-fit: contain;
+  border-radius: 8%;
 }
