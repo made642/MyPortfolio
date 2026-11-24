@@ -1,9 +1,54 @@
 body {
   display: block;
   margin: 8px;
-  background-color: #f4e8e1;
-  color: #423c34;
+  background: #0c0c0c;
+  color: #f3f3f3;
   font-family: "inter", sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* vertically aligns text with photo */
+  gap: 30px;
+  padding: 30px;
+  background:
+    linear-gradient(to top, #035b7a, #00447c),
+    linear-gradient(to right, #212121, #0b7b9e);
+  background-blend-mode: difference;
+}
+
+.myportfolio {
+  text-align: center;
+  max-width: 600px;
+}
+
+.mypic img {
+  object-fit: cover;
+  position: relative;
+  border-radius: 20%;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column-reverse;
+    text-align: center;
+    gap: 20px;
+  }
+}
+
+#name {
+  color: #0b7b9e;
+  font-weight: 700;
+}
+
+.title,
+.location {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 16px;
+  color: #979695;
 }
 
 nav {
@@ -24,22 +69,9 @@ a:hover {
   color: #748eb0;
 }
 
-.greeting-text {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-size: 2rem;
-}
-.name {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 h1,
-h2,
-h3 {
-  color: #748eb0;
+h2 {
+  color: #f3f3f3;
   font-family: "Space Grotesk", sans-serif;
   font-weight: 700;
   line-height: 1.2;
@@ -55,37 +87,13 @@ h3 {
 }
 
 p {
-  color: #423c34;
+  color: #dddace;
 }
 img {
   max-width: 100%;
   height: auto;
   border-radius: 8%;
   width: 200px;
-}
-
-.greetings {
-  display: flex;
-  flex-direction: column;
-  margin: 20px;
-}
-
-.mypic {
-  position: relative;
-  justify-content: space-between;
-  margin: 20px;
-}
-
-.overlay {
-  background-color: rgba(0, 0, 0, 0.5);
-  opacity: 0;
-  transition: 0.3s ease;
-  background-image:
-    url("img/happy me.jpg"), url("img/india dressjpg"),
-    url("img/solo pic Singapore .jpg");
-  background-size: cover, cover, cover;
-  background-position: center, center, center;
-  background-repeat: no-repeat, no-repeat, no-repeat;
 }
 
 .tools ul {
@@ -123,13 +131,13 @@ img {
   margin-bottom: 20px;
   text-align: center;
   text-decoration: none;
-  background-color: #748eb0;
+  background-color: #0b7b9e;
   padding: 10px;
   border-radius: 5px;
 }
 
 a {
-  color: #423c34;
+  color: #0b7b9e;
   text-decoration: none;
 }
 
@@ -156,7 +164,7 @@ a {
   text-decoration: none;
 }
 .projects a:hover {
-  background-color: #14b8a6;
+  background-color: #0b7b9e;
   color: #f8fafc;
   border-radius: 5px;
 }
