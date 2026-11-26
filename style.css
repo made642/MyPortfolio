@@ -93,6 +93,9 @@ img {
   height: auto;
 }
 
+section {
+  padding: 20px;
+}
 .tools ul {
   display: flex;
   flex-wrap: wrap;
