@@ -26,13 +26,13 @@ body {
 .mypic img {
   object-fit: cover;
   position: relative;
+  height: 25cap;
 }
 
 @media (max-width: 768px) {
   .container {
     flex-direction: column-reverse;
-    text-align: center;
-    gap: 20px;
+    gap: 10px;
   }
 }
 
@@ -43,8 +43,6 @@ body {
 
 .title,
 .location {
-  margin-top: 20px;
-  margin-bottom: 20px;
   font-family: "Space Grotesk", sans-serif;
   font-size: 16px;
   color: #979695;
@@ -73,10 +71,12 @@ h2 {
   color: #f3f3f3;
   font-family: "Space Grotesk", sans-serif;
   font-weight: 700;
-  line-height: 1.2;
 }
+
 h1 {
-  font-size: clamp(2.5rem, 7vw, 4.5rem);
+  font-size: 45px;
+  margin-bottom: 10px;
+  margin-top: 0px;
 }
 h2 {
   font-size: clamp(1.8rem, 5vw, 3rem);
